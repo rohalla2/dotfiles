@@ -30,3 +30,4 @@
   #Custom alias
   cit = commit -m "temp" --no-verify
   rbi = "!f() { git rebase -i HEAD~$1; }; f"
+  cpm = "!f() { git co master && git pull; }; f"
