@@ -9,7 +9,7 @@ if argument git; then
   cat $DIR/.gitconfig >> ~/.gitconfig
   echo '# end rohalla2' >> ~/.gitconfig
 
-  cp $DIR/.git-completion.sh ~
+  cp $DIR/.git-completion.bash ~
   cp $DIR/.git-branch-prompt.sh ~
 fi
 

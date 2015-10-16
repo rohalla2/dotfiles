@@ -10,8 +10,8 @@ export BUNDLER_EDITOR=gvim
 
 export PROMPT_COMMAND='echo -ne "\033]0;${TITLE-${PWD##*/}}\007"'
 
-if [ -f ~/.git-completion.sh ]; then
-  . ~/.git-completion.sh
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
 fi
 if [ -f ~/.git-branch-prompt.sh ]; then
   . ~/.git-branch-prompt.sh
