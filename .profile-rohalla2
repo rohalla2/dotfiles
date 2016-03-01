@@ -4,6 +4,9 @@ alias be='bundle exec'
 alias market-data="cd ~/code/likeassets/projects/appserver/; RAILS_ENV=local_production be rake market_data:use_latest"
 alias sidekiq="cd ~/code/likeassets/projects/appserver/; bundle exec sidekiq -C config/sidekiq.yml -e local_production"
 alias appserver="cd ~/code/likeassets/projects/appserver/; RAILS_ENV=local_production be passenger start"
+alias ui="cd ~/code/nextcapital-ui/"
+alias rails-app="cd ~/code/likeassets/projects/appserver/"
+alias bb="cd ~/code/nextcapital-ui/app/styles/building-blocks"
 
 export EDITOR=vim
 export BUNDLER_EDITOR=gvim
