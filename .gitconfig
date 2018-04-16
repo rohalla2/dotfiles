@@ -32,5 +32,6 @@
   cit = commit -m "temp" --no-verify
   rbi = "!f() { git rebase -i HEAD~$1; }; f"
   copm = "!f() { git co master && git pull; }; f"
+  copd = "!f() { git co develop && git pull; }; f"
   fixup = "!f() { git aa && git ci --amend --no-edit --no-verify; }; f"
   rb = pull --rebase origin master
