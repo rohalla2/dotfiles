@@ -16,3 +16,12 @@ fi
 if [ -f ~/.git-branch-prompt.sh ]; then
   . ~/.git-branch-prompt.sh
 fi
+
+# Add ssh key (password reentered on restart)
+OUTPUT="$(ssh-add -l)"
+
+if [ "$OUTPUT" = 'The agent has no identities.' ]; then
+    ssh-add
+else
+    echo "SSH Key already known."
+fi
